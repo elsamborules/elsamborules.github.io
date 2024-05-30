@@ -1,0 +1,57 @@
+{
+  "name": "squadmc",
+  "description": "The map-based mortar calculator for Squad",
+  "version": "2.14.0",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --modern",
+    "lint": "vue-cli-service lint",
+    "release": "standard-version",
+    "calc": "node calcMortarSettings.js"
+  },
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "replace \"\\nAll notable changes to this project will be documented in this file. See \\[standard-version\\]\\(https://github.com/conventional-changelog/standard-version\\) for commit guidelines.\\n\" \"\" CHANGELOG.md"
+    }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "custom-event-polyfill": "^1.0.6",
+    "eslint-config-mourner": "^3.0.0",
+    "graceful-fs": "^4.1.15",
+    "hack-font": "^3.3.0",
+    "leaflet": "^1.4.0",
+    "material-icons": "^0.3.0",
+    "performance-polyfill": "^0.0.3",
+    "raf": "^3.4.1",
+    "raven-js": "^3.27.0",
+    "replace": "^1.0.1",
+    "semver": "^5.6.0",
+    "standard-version": "^8.0.1",
+    "typeface-roboto": "^0.0.54",
+    "vue": "^2.5.22",
+    "vue-md-loader": "^1.1.0",
+    "vue-router": "^3.4.5",
+    "vuetify": "^1.4.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-plugin-transform-imports": "^1.5.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-vuetify": "^0.4.6",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions",
+    "not ie <= 8",
+    "safari >= 8",
+    "iOS >= 8"
+  ]
+}
